@@ -1,0 +1,143 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{purple}                               % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+%\usepackage[scale=0.75]{libertine}
+%\usepackage[scale=0.75]{mathpazo}
+\setlength{\hintscolumnwidth}{3.5cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{Sonia}{Ouchtar}
+% \title{ResumÃ© title}                               % optional, remove / comment the line if not wanted
+\address{3 rue du jardin botanique}{27000 Evreux}{}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\phone[mobile]{+33~7~82~61~96~72}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
+\email{sonia.ouchtar@gmail.com}                               % optional, remove / comment the line if not wanted
+% \homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
+\social[linkedin]{soniaouchtar}                        % optional, remove / comment the line if not wanted
+% \social[twitter]{jdoe}                             % optional, remove / comment the line if not wanted
+ \social[github]{souchtar}                              % optional, remove / comment the line if not wanted
+% \extrainfo{additional information}                 % optional, remove / comment the line if not wanted
+% \photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Informatique (Test et D\'eveloppement) / Electronique (Micro/Nano)}                                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture.jpg}
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Experience}
+
+\cventry{Mars 2015--A present}{Fleet/CustomerCare Ingenieur Outils Software}{Aldebaran - Softbank Group}{Paris}{}{Support Software de la branche Fran\c caise. Creation d'outils, retours terrains \`a la R\&D, documents de formation.{}%
+\begin{itemize}%
+\item Creation d'outils d'investigation en remote (utilisation d'api rest) et en local sur robot (en python et bash)
+\item Creation/relecture de documentations de formation Software:
+  \begin{itemize}%
+  \item Troubleshooting
+  \item Outils
+  \end{itemize}
+\item Amelioration du report de probl\`emes \`a Paris : nomenclature normalisee, comprehension des probl\`emes.
+\item Communication avec la branche Japonaise pour rapports terrain\newline
+\end{itemize}}
+
+\cventry{Sept 2014--Mars 2015}{Fleet/CustomerCare Ingenieur Outils Software}{Aldebaran - Softbank Group}{Tokyo}{}{Support Software de la branche Japonaise. Analyse des probl\`emes clients, creation d'outil, amelioration du processus d'investigation et de la base de connaissance, analyse des probl\`emes generaux de la flotte et revue des priorites R\&D.{}%
+\begin{itemize}%
+\item Creation d'un document de suivi de l'investigation en local
+\item Creation de documentations de formation Software:
+  \begin{itemize}%
+  \item Syst\`eme
+  \item Outils
+  \end{itemize}
+\item Creation d'outils d'investigation en remote (utilisation d'api rest) et en local sur robot (en python et bash)
+\item Amelioration du report de probl\`emes \`a Paris : nomenclature normalisee, comprehension des probl\`emes\newline
+\end{itemize}}
+
+\cventry{Juin 2013--Aout 2014}{Software Quality Assurance Team Leader}{Aldebaran - Softbank Group}{Paris}{}{Creation d'une \'equipe d\'edi\'ee \`a la qualit\'e Software. Mise en place de la m\'ethodologie et des objectifs. Responsable de la validation des versions Software avant livraison au client final (produit embarque et desktop). Responsable de la creation /amelioration des outils de tests Software{}%
+\begin{itemize}%
+\item Creation d'une campagne de tests en pytest fonctionnels automatiques et semi-automatiques sur tous les modules de l'OS robotique
+\item Recrutement / Management d'une equipe de 5 personnes
+\item Creation / Amelioration continue des plans de tests suivant les evolutions systeme
+\item Communication avec la R\&D, choix de la priorisation de resolution de probl\`emes
+\item Nombreux voyages de support / de formation en Chine et au Japon\newline
+\end{itemize}}
+
+\cventry{Oct 2012--Juin 2013}{Ingenieur qualification robotique }{Aldebaran - Softbank Group}{Paris}{}{Creation de plans de tests produit (m\'elangeant software, hardware et applicatif). Tests sommaires des couples version software/version hardware et des applications robotiques{}%
+\begin{itemize}%
+\item Creation des plans de test des produits Desktop
+\item Am\'elioration des plans de test g\'en\'eraux\newline
+\end{itemize}}
+
+\cventry{Mars 2012--Aout 2012}{Projet de fin d'etudes}{Laboratoire Okuno And Ogata}{Kyoto}{}{Programmation en python d'un robot Nao d'Aldebaran, en vue de jouer du marimba. Etude des limites robotiques\newline}
+
+\cventry{Mai 2011--Aout 2011}{Stage technicien}{Laboratoire de metrologie, Legrand}{Sille-Le-Guillaume}{}{Optimisation du test de charge des chemins de cables. Creation du diagramme d'Ishikawa du test. Simulation Solidworks du test normatif pour acceleration du process\newline}
+
+\cventry{Juil 2010--Aout 2010}{Stage ouvrier}{Centre de l'Arche}{Le Mans}{}{Etude par Capture Motion de l'amelioration de la marche humaine apr\`es chirurgie, prothese ou r\'eeducation\newline}
+
+\section{Education}
+\cventry{Sept 2009--Sept 2012}{Diplome d'Ing\'enieur en Physique et Nanosciences}{INP - Phelma }{Grenoble}{}{1\`ere an\'ee : Fili\`ere PMP (Physique Materiau Proc\'ed\'es). 2\`eme ann\'ee : Fili\`ere PNS (Physique et NanoScience). 3\`eme ann\'ee : Semestre \`a choix AST (Art Science \& Technologie)\newline}
+
+\cventry{Sept 2007--Sept 2009}{Classe Preparatoire aux Grandes Ecoles - PCSI/PC*}{Lyc\'ee Montesquieu}{Le Mans}{}{Travaux d'Initiative Personnelle Encadr\'es portant sur la caracterisation d'une surface trait\'ee par plasma froid\newline}
+
+\cventry{Sept 2004--Sept 2007}{Baccalaureat S option Physique-Chimie mention TB}{Lyc\'ee Bellevue}{Le Mans\newline}{}{}
+
+\section{Comp\'etences}
+% \cvdoubleitem{Langages}{C, C++, Python, Javascript}{Frameworks~\& bibliotheques}{Django, PyQt, Qt, lxml, Dojo~Toolkit}
+% \cvdoubleitem{Conception~\& Architechture}{Parallele, Programmation Asynchrone, Programmation reactive, Moteurs physiques 2D, Web-Crawlers, Bases de donn\'ees relationnelles'}{category 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+\cvitem{Langages}{Python, C++, Matlab, Solidworks, Labview, notions en Java, notions en C, notions en SQL, notions en Haskell}
+\cvitem{Biblioth\`eques~\& Frameworks}{PyQt, Qt, Pytest}
+\cvitem{OS}{Unix, Linux, Windows, Mac}
+\cvitem{Autres competences}{management, test/qualite, micro/nano electronique}
+
+\section{Langues}
+\cvitemwithcomment{Fran\c cais}{langue maternelle}{}
+\cvitemwithcomment{Anglais}{avance}{Paper-based TOEFL obtenu}
+\cvitemwithcomment{Japonais}{avance}{}
+\cvitemwithcomment{Espagnol}{intermediaire}{}
+\cvitemwithcomment{Portugais}{intermediaire}{}
+\cvitemwithcomment{Arabe}{notions}{}
+\cvitemwithcomment{Grec ancien}{lu}{Etude du grec ancien pendant 4 ans}
+
+\section{Interets}
+\cvitem{Voyages}{Maroc, Portugal, Espagne, Italie, Angleterre, Belgique, Hollande, Finlande, Suisse, Allemagne, Chine, Cor\'ee, Japon (10 s\'ejours)}
+\cvitem{Sport}{V\'elo, Badminton, Aikido, Parkour/FreeRun}
+\cvitem{Lecture}{Mythes, Legendes, Folklore et Histoire des peuples, Romantisme}
+\cvitem{Musique}{Metal, Pagan Folk, Musique Baroque}
+\cvitem{Jeux}{Jeux de soci\'et\'e, Jeux de r\~ole}
+
+\clearpage
+\end{document}
+
+
+%% end of file `template.tex'.
